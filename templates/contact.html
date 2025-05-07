@@ -1,0 +1,113 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+<title>
+{% block title %}Contact Us{% endblock title %}
+</title>
+{% block content %}
+<br>
+<br>
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-section set-bg" data-setbg="{% static 'assets/img/breadcrumb-1.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h2>Contact Us</h2>
+                    <div class="breadcrumb__option">
+                        <a href="{% url 'home' %}">Home</a>
+                        <span class="breadcrumb__separator"><i class="fa fa-angle-right"></i></span>
+                        <span>Contact Us</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb Section End -->
+<br>
+
+<!-- Contact Section Begin -->
+<section class="contact spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                <div class="contact__widget">
+                    <span class="icon_phone"></span>
+                    <h4>Call</h4>
+                    <p>+254792-639-996</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                <div class="contact__widget">
+                    <span class="icon_pin_alt"></span>
+                    <h4>Address</h4>
+                    <p>Rhino park Road, Karen, Nairobi Kenya</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                <div class="contact__widget">
+                    <span class="icon_clock_alt"></span>
+                    <h4>Opening Hours</h4>
+                    <p>8:30am - 5:30pm, Everyday</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                <div class="contact__widget">
+                    <span class="icon_mail_alt"></span>
+                    <h4>Email</h4>
+                    <p>theresurrectiongarden@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section End -->
+
+<!-- Map Begin -->
+<div class="map">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7709541908025!2d36.674426874965505!3d-1.3128642986746684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1c8a7f0b49eb%3A0xfccded75d5067630!2sResurrection%20Garden!5e0!3m2!1sen!2ske!4v1744689573116!5m2!1sen!2ske"
+        height="500" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="map-inside">
+        <i class="icon_pin"></i>
+        <div class="inside-widget">
+            <h4>Resurrection Garden</h4>
+            <ul>
+                <li>0792-639-996
+                </li>
+                <li>Rhino park Road, Karen, Nairobi Kenya</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Map End -->
+
+<!-- Contact Form Begin -->
+<div class="contact-form spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="contact__form__title">
+                    <h2>Leave Message</h2>
+                </div>
+            </div>
+        </div>
+        <form id="ajax-contact-form" method="POST">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <input name="name" id="name" type="text" placeholder="Your name">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input name="email" id="email" type="text" placeholder="Your Email">
+                </div>
+                <div class="col-lg-12 text-center">
+                    <textarea name="message" id="message" placeholder="Your message"></textarea>
+                    <button id="ajax-contact-form" type="submit" class="site-btn">SEND MESSAGE</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Contact Form End -->
+
+{% endblock content %}

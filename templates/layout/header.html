@@ -1,0 +1,105 @@
+
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- ***** Top Header Area ***** -->
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-header-content d-flex flex-wrap align-items-center justify-content-between">
+                            <!-- Top Header Meta -->
+                            <div class="top-header-meta d-flex flex-wrap">
+                                <a href="#" class="open" data-toggle="tooltip" data-placement="bottom" title="10 Am to 6 PM"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>Оpen: 9.00am to 17.00pm</span></a>
+                            </div>
+                            <!-- Top Header Meta -->
+                            <div class="top-header-meta">
+                                <a href="mailto:theresurrectiongarden@gmail.com" class="email-address"><i class="fa fa-envelope" aria-hidden="true"></i> <span>theresurrectiongarden@gmail.com</span></a>
+                                <a href="tel+254792639996" class="phone"><i class="fa fa-phone" aria-hidden="true"></i> <span>+254792-639-996</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Top Header Area ***** -->
+
+        <!-- ***** Navbar Area ***** -->
+        <div class="crose-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="croseNav">
+
+                        <!-- Nav brand -->
+                        <a href="{% url 'home' %}" class="nav-brand header-logo"><img src="/static/img/core-img/emblem.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="{% url 'home' %}">Home</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="{% url 'home' %}">Home</a></li>
+                                            <li><a href="{% url 'about' %}">About Us</a></li>
+                                            <li><a href="#">Inside The Garden</a></li>
+                                            <li><a href="https://www.cardinalotunga.org/">Cardinal Otunga</a></li>
+                                            <li><a href="#">Retreat House</a></li>
+                                            <li><a href="#">Fr Santoro</a></li>
+                                            <li><a href="#">Booking</a></li>
+                                            <li><a href="{% url 'directions' %}">Directions</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="{% url 'contact' %}">Retreat House</a></li>
+                                    <li><a href="#news">News & Announcements</a></li>
+                                    <li><a href="{% url 'contact' %}">Сontact Us</a></li>
+                                </ul>
+
+                                <!-- Search Button -->
+                                <!-- <div id="header-search"><i class="fa fa-search" aria-hidden="true"></i></div> -->
+
+                                <!-- Donate Button -->
+                                <a href="{% url 'donate' %}" class="btn crose-btn header-btn">Donate Now</a>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- ***** Search Form Area ***** -->
+            <div class="search-form-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <div class="searchForm">
+                                <form action="#" method="post">
+                                    <input type="search" name="search" id="search" placeholder="Enter keywords &amp; hit enter...">
+                                    <button type="submit" class="d-none"></button>
+                                </form>
+                                <div class="close-icon" id="searchCloseIcon"><i class="fa fa-close" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Navbar Area ***** -->
+    </header>
+    <!-- ##### Header Area End ##### -->

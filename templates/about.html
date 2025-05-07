@@ -1,0 +1,93 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+<title>
+{% block title %}About Us{% endblock title %}
+</title>
+{% block content %}
+<br>
+<br>
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-section set-bg" data-setbg="{% static 'assets/img/breadcrumb-1.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h2>About Us</h2>
+                    <div class="breadcrumb__option">
+                        <a href="{% url 'home' %}">Home</a>
+                        <span class="breadcrumb__separator"><i class="fa fa-angle-right"></i></span>
+                        <span>Our Story</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb Section End -->
+<br>
+
+<section class="about-area section-padding-100-0" id="about">
+    <div class="container">
+        <div class="row">
+            <!-- Section Heading -->
+            <div class="col-12">
+                <div class="section-heading">
+                    <h2>History</h2>
+                    <p>In the year 1984, the Servant of God His Eminence Maurice Michael Cardinal Otunga went to visit a Consolata missionary Fr. Ottavio Santoro, in his office at the Consolata Fathers, Westlands and asked him whether he could assist him in getting for the Archdiocese of Nairobi a Way of the Cross on large bronze panels. Fr. Santoro volunteered to consider the matter and to get all the necessary information from the suppliers in Italy.
+
+                        The Cardinal had in mind to place the bronze Stations of the Cross around the Holy Family Minor Basilica of Nairobi in the niches carved out for the chapels, which were added to the Cathedral before being declared a Minor Basilica.
+                        
+                        An Italian architect, Luciano Massetti, came all the way from Rome to visit the Basilica and see how to position the bronzes. Fr. Santoro suggested to the Cardinal that rather than having the panels around the Basilica, they be positioned around the square in front of the Basilica, although the same Fr. Santoro was not convinced that it was the right place either. The Cardinal asked Fr. santoro to look for a suitable place for the project.
+                        
+                        On 19th October 1988, Pope St. John Paul II blessed the eight panel of the Way of the Cross in St. Peter’s Square after the Wednesday General Audience, at the presence of some friends and benefactors of the Archdiocese of Nairobi. Those present included Cardinal Otunga, Fr. Santoro, Mr. Roberto Mezzaroma (representing his brother Pietro who was not well), Mr. Piero Massetti of Mar Statue Sacre and Mr. Luciano Finocchiaro, one of the artists. The photo of the panel while John Paul II was blessing it appeared on the Osservatore Romano of the following day, 20th Oct. 1988.
+                        
+                        By the time the first five bronze panels reached Nairobi in September 1987, it became more pressing to find a suitable plot for the Way of the Cross where people could spend time in prayer and meditation. With the pressure to have a plot as soon as possible, Fr. Santoro remembered the plot on Rhino Park Road that he had asked earlier for some sisters and since these sisters were no longer interested, he decided to buy the 12 acres’ land since it seemed suitable for the purpose. The land was bought and the deal was finalized on 2nd March 1989. In March 1990, the works began with the blessing of the ground by Cardinal Otunga, which took place where the present main sacristy is located, at the presence of Fr. Santoro, some building consultants and a group of Dimesse Sisters. Later, 10 m ore acres were added.
+                        
+                        In the beginning of 1994, most of the work was completed and the Cardinal suggested that the time for the inauguration of the Resurrection Garden had come. So, he proposed the Solemnity of Corpus Christi as the day of the inauguration. So, on that Sunday of 5th June 1994, at the presence of many Priests, Religious and lay people, the Resurrection Garden was inaugurated and officially blessed by Cardinal Otunga.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row about-content justify-content-center">
+            <!-- Single About Us Content -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="about-us-content mb-100">
+                    <img src="{% static 'img/bg-img/3.jpg' %}" alt="">
+                    <div class="about-text">
+                        <h4>Vision</h4>
+                        <p>In the Resurrection Garden, the pilgrims experience the presence and love of God and praise him; they strengthen their Christian faith and are called to become messengers of the Good News. 
+                            The garden therefore offers to the pilgrims a more abundant way to the means of salvation, to announce the Word of God and to grow in the liturgical life.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single About Us Content -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="about-us-content mb-100">
+                    <img src="{% static 'img/bg-img/4.jpg' %}" alt="">
+                    <div class="about-text">
+                        <h4>Mission</h4>
+                        <p>The specific aim of the Resurrection Garden (the Church, the various chapels, the way of salvation, the way of the cross and the grounds themselves) is to offer to the pilgrims a place for prayer, meditation and contemplation.
+                            The main feature of this shrine is a biblical journey through the history of salvation, with a special emphasis on the sufferings, passion, death and resurrection of Jesus Christ. Mankind has been saved through the death and Resurrection of Jesus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single About Us Content -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="about-us-content mb-100">
+                    <img src="{% static 'img/bg-img/5.jpg' %}" alt="">
+                    <div class="about-text">
+                        <h4>Foundation</h4>
+                        <p>The Resurrection is the foundation on Christian faith. It is the greatest event in the history of salvation, the supreme proof of Jesus’ divinity, of the divine origin of His teachings and salvation. 
+                            A garden in the Bible has a special place and meaning. It is a place that reminds us of the Garden of Eden as a place of life and death</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}
