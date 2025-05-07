@@ -235,7 +235,7 @@ img {
   background-position: center center;
   background-size: cover; }
   .bg-overlay::after {
-    background-color: rgba(220, 215, 215, 0.7);
+    background-color: rgba(178, 173, 173, 0.7);
     position: absolute;
     z-index: -1;
     top: 0;
@@ -505,20 +505,20 @@ img {
       transition-duration: 500ms;
       color: #ffffff;
       font-weight: 700;
-      font-size: 30px; }
+      font-size: 40px; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .single-hero-slide .hero-slides-content h2 {
           font-size: 30px; } }
       @media only screen and (max-width: 767px) {
         .single-hero-slide .hero-slides-content h2 {
-          font-size: 20px; } }
+          font-size: 30px; } }
     .single-hero-slide .hero-slides-content p {
-      font-size: 15px;
+      font-size: 20px;
       color: #ffffff;
       margin-bottom: 40px; }
       @media only screen and (max-width: 767px) {
         .single-hero-slide .hero-slides-content p {
-          font-size: 14px; } }
+          font-size: 20px; } }
 
 /* :: 6.0 About Us Area CSS */
 .about-us-area {
